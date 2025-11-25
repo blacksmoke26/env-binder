@@ -38,7 +38,7 @@ pnpm add @junaidatari/env-binder
 
 ### Basic Setup
 
-1. Create a `.env` file in your project's root directory: 
+1. Create a `.env` file in your project's root directory:
 
 ```dotenv
 HOST=localhost
@@ -55,7 +55,7 @@ import 'dotenv/config';
 import env from '@junaidatari/env-binder';
 
 const host = env.getString('HOST', '127.0.0.1');
-const port = env.getNumber('PORT', 3000);
+const port = env.getInteger('PORT', 3000);
 
 console.log(`Server will run on ${host}:${port}`);
 ```
@@ -89,7 +89,7 @@ declare module '@junaidatari/env-binder' {
 }
 ```
 
-**Bonus Tip**: Please check the `samples/` directory for supported values and enhanced usage.
+**Bonus Tip**: Please check the `tests/` directory for supported values and enhanced usage.
 
 ## Core API 📚
 
@@ -1043,6 +1043,14 @@ npm run test
 ## License 📄
 
 This project is licensed under the ISC License - see the LICENSE file for details.
+
+## Inspiration
+
+This package originated from my work on the Jii framework's environment module,
+where it has been refined and battle-tested in numerous enterprise-grade
+applications over time. For those interested in exploring the original
+implementation, you can check out the source code at
+[JiiFW EnvCore](https://github.com/jiifw/jii/blob/master/framework/core/src/env/variables.ts).
 
 ## Support 💬
 
