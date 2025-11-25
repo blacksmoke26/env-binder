@@ -1,0 +1,17 @@
+.env
+
+# Not checking this in
+package-lock.json
+pnpm-lock.yaml
+myapp
+*.swp
+.idea
+.vscode
+.DS_STORE
+node_modules
+npm-debug.log
+*~
+database.sqlite
+.nyc_output
+coverage/
+coverage-*/
