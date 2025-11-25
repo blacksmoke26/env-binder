@@ -1,0 +1,84 @@
+{
+  "name": "@junaidatari/env-binder",
+  "version": "0.0.1",
+  "private": false,
+  "publishConfig": {
+    "tag": "latest",
+    "access": "public"
+  },
+  "description": "TypeScript environment variable binder with type safety and validation.",
+  "homepage": "https://github.com/blacksmoke26/env-binder#readme",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "environment",
+    "env",
+    "variables",
+    "typescript",
+    "binder",
+    "validation",
+    "type-safe",
+    "config",
+    "configuration",
+    "dotenv",
+    "dotenv-safe",
+    "env-var",
+    "environment-config",
+    "process-env",
+    "env-parser",
+    "env-validator",
+    "typescript-env",
+    "env-binding",
+    "config-manager",
+    "environment-loader",
+    "env-types",
+    "typed-env",
+    "safe-env",
+    "env-helper",
+    "env-utilities",
+    "dev-tools",
+    "automation",
+    "codegen"
+  ],
+  "files": [
+    "*.js",
+    "lib/**/*.js",
+    "types/**/*.ts",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blacksmoke26/env-binder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blacksmoke26/env-binder/issues"
+  },
+  "scripts": {
+    "test": "ts-node tests/index.ts",
+    "clean": "rimraf lib && rimraf types",
+    "clean:all": "npm run clean && rimraf --glob junaidatari-env-binder-*.tgz",
+    "build": "npm run clean:all && tsc && tsc-alias",
+    "d:pack": "npm run build && npm pack && npm run clean"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "engine-strict": true,
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "author": "Junaid Atari (https://github.com/blacksmoke26)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/object-path": "^0.11.4",
+    "dotenv": "^17.2.3",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
