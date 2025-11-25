@@ -1,0 +1,27 @@
+{
+  "name": "env-binder-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:ts": "ts-node src/ts/index.ts",
+    "start:esm": "node src/esm/index.mjs",
+    "start:cjs": "node src/cjs/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@junaidatari/env-binder": "file:junaidatari-env-binder-0.0.1.tgz",
+    "@junaidatari/json2ts": "^0.0.3",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
+  }
+}
