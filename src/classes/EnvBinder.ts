@@ -2012,9 +2012,9 @@ export const BOOLEAN_FALSY_VALUES = ['false', '0', 'null', '', 'undefined', 'off
    public getEnum<T = unknown>(
      name: keyof EnvVariables | string,
      allowedValues: Array<T>,
-     defaultValue: T | undefined = undefined as T,
+     defaultValue: T = '' as T,
      required: boolean = false
-   ): T | undefined {
+   ): T {
      const value = this.getValue<string>(name, String(defaultValue)).trim();
 
      if (required && !value) {
